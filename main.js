@@ -14,3 +14,4 @@ document.querySelector('.js-grid').addEventListener('click', (e) => {
     console.log('item1 hovered')
     document.querySelector('.js-grid').classList.remove ('grid--full')
 }) */
+
