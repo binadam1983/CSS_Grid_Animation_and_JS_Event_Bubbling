@@ -20,13 +20,6 @@
     switch(selectColumn) {
         case 0:
             document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
-/*             if (document.querySelector('.js-grid').classList.contains('restore')){                
-                document.querySelector('.js-grid').classList.remove('restore')
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
-            } else{
-                document.querySelector('.js-grid').classList.add('restore')
-                return
-            } */
             break;
         case 1:
             document.querySelector('.js-grid').style.gridTemplateColumns= "500px 200px 200px 200px";
@@ -56,7 +49,6 @@
             break;
         default:
            document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 200px";
-    }
-    })
+        }
 
-  //  document.querySelector('.js-grid').classList.toggle('grid--restore')
+    })
