@@ -1,20 +1,16 @@
 body{
   background-color: aliceblue;
+  margin-top: 50px;
   display: grid;
 }
 
 .grid {
   margin: auto;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
   grid-gap: 20px;
   transition: all 1s;
-}
-
-.restore {
-  grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px 200px;
 }
 
 .item{

@@ -22,8 +22,9 @@
     console.log(expanded_article_number)
     
     if (expanded_article_number == elementNumber){
-        document.querySelector('.js-grid').style.gridTemplateColumns="200px 200px 200px 200px"
-        document.querySelector('.js-grid').style.gridTemplateRows="200px 200px 200px 200px"
+        document.querySelector('.js-grid').style.gridTemplateColumns="100px 100px 100px 100px"
+        document.querySelector('.js-grid').style.gridTemplateRows="100px 100px 100px 100px"
+        window.localStorage.clear()
         return
     }
     
@@ -34,35 +35,35 @@
         
         switch(selectColumn) {
             case 0:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "100px 100px 100px 500px";
                 break;
             case 1:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "500px 200px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "500px 100px 100px 100px";
                 break;
             case 2:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 500px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "100px 500px 100px 100px";
                 break;
             case 3:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 500px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "100px 100px 500px 100px";
                 break;
             default:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "100px 100px 100px 100px";
         }
 
         switch(selectRow) {
             case 0:
-                document.querySelector('.js-grid').style.gridTemplateRows= "500px 200px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "500px 100px 100px 100px";
                 break;
             case 1:            
-                document.querySelector('.js-grid').style.gridTemplateRows= "200px 500px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "100px 500px 100px 100px";
                 break;
             case 2:
-                document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 500px 200px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 500px 100px";
                 break;
             case 3:
-                document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 500px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 100px 500px";
                 break;
             default:
-            document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 200px";
+            document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 100px 100px";
         }
     })
