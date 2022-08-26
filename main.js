@@ -3,16 +3,12 @@
     document.querySelector('.js-grid').classList.toggle('grid--full')
   }) */
 
-/* document.querySelector('.js-grid').addEventListener('click', (e) => {
-    console.log(e.target)
-    document.querySelector('.js-grid').classList.toggle('grid--full')
-}) */
 
 function clicked(){
     document.querySelector('.js-grid').addEventListener('click', (e) => {
     
     const target = e.target
-    //  target.preventDefault()
+
     if (target.matches('article')){
         target.style.background = 'red'
     }
@@ -57,18 +53,6 @@ function clicked(){
         default:
             document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 200px";
     }
-    console.log(selectColumn)
-    console.log(selectRow)
-
-/*         document.querySelector('.js-grid').style.gridTemplateColumns= "col1 col2 col3 col4";
-        document.querySelector('.js-grid').style.gridTemplateRows= "row1 row2 row3 row4"; */
-
     })
 
 }
-
-/* document.querySelector('.js-grid').addEventListener('mouseleave', () => {
-    console.log('item1 hovered')
-    document.querySelector('.js-grid').classList.remove ('grid--full')
-}) */
-
