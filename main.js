@@ -3,26 +3,30 @@
     document.querySelector('.js-grid').classList.toggle('grid--full')
   }) */
 
-
-function clicked(){
     document.querySelector('.js-grid').addEventListener('click', (e) => {
     
     const target = e.target
 
     if (target.matches('article')){
-        target.style.background = 'red'
     }
     let elementNumber = parseInt(target.classList[1])
     let selectRow = Math.floor(elementNumber / 4)    
     let selectColumn = elementNumber%4
 
     if (selectColumn == 0){
-        selectRow = selectRow -1;
+        selectRow = selectRow - 1;
     }
 
     switch(selectColumn) {
         case 0:
             document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
+/*             if (document.querySelector('.js-grid').classList.contains('restore')){                
+                document.querySelector('.js-grid').classList.remove('restore')
+                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
+            } else{
+                document.querySelector('.js-grid').classList.add('restore')
+                return
+            } */
             break;
         case 1:
             document.querySelector('.js-grid').style.gridTemplateColumns= "500px 200px 200px 200px";
@@ -51,8 +55,8 @@ function clicked(){
             document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 500px";
             break;
         default:
-            document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 200px";
+           document.querySelector('.js-grid').style.gridTemplateRows= "200px 200px 200px 200px";
     }
     })
 
-}
+  //  document.querySelector('.js-grid').classList.toggle('grid--restore')
