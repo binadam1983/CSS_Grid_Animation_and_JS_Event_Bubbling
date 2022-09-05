@@ -45,16 +45,16 @@
 
         switch(selectColumn) {
             case 0:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 500px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "0px 0px 0px 805px";
                 break;
             case 1:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "500px 200px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "805px 0px 0px 0px";
                 break;
             case 2:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 500px 200px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "0px 805px 0px 0px";
                 break;
             case 3:
-                document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 500px 200px";
+                document.querySelector('.js-grid').style.gridTemplateColumns= "0px 0px 805px 0px";
                 break;
             default:
                 document.querySelector('.js-grid').style.gridTemplateColumns= "200px 200px 200px 200px";
@@ -63,16 +63,16 @@
 
         switch(selectRow) {
             case 0:
-                document.querySelector('.js-grid').style.gridTemplateRows= "500px 100px 100px 100px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "500px 0px 0px 0px";
                 break;
             case 1:            
-                document.querySelector('.js-grid').style.gridTemplateRows= "100px 500px 100px 100px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "0px 500px 0px 0px";
                 break;
             case 2:
-                document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 500px 100px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "0px 0px 500px 0px";
                 break;
             case 3:
-                document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 100px 500px";
+                document.querySelector('.js-grid').style.gridTemplateRows= "0px 0px 0px 500px";
                 break;
             default:
             document.querySelector('.js-grid').style.gridTemplateRows= "100px 100px 100px 100px";

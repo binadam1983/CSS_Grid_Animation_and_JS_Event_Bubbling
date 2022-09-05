@@ -1,15 +1,31 @@
+*{
+  top: 50px;
+  left: 50px;
+  right: 100px;
+  bottom: 50px;
+  overflow: hidden;
+}
 body{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 270px;
+  padding-right: 260px;
+
   background-color: aliceblue;
-  margin-top: 50px;
   display: grid;
 }
 
 .grid {
-  margin: auto;
+  top: 50px;
   display: grid;
+  right: 0px;
+  bottom: 0px;
+
   grid-template-columns: 200px 200px 200px 200px;
+//grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
   grid-template-rows: 100px 100px 100px 100px;
-  grid-gap: 20px;
+
+  grid-gap: 5px;
   transition: all 1s;
 }
 
@@ -22,5 +38,4 @@ body{
   font-weight: bold;
   font-size: 2rem;
   cursor: pointer;
-  
 }
