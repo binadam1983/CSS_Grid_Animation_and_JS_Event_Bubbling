@@ -2,9 +2,9 @@
 
 This repo uses the combination of following CSS and JS features to demonstrate a concept that can serve as a simple, but exciting page layout model/proto:
 
-  > CSS Grid Animation using transition, columns and rows
-  > JS Event Delegation
-  > Uses Math.floor, modulo, and quotient to determine the row and the column of the element/box clicked
+  - CSS Grid Animation using transition, columns and rows
+  - JS Event Delegation
+  - Uses Math.floor, modulo, and quotient to determine the row and the column of the element/box clicked
   
   ![](c:\users\smc\deskotp\gifs\grid_60-390.gif)
 
