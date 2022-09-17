@@ -1,4 +1,4 @@
-# CSS_Grid_Animation_and_JS_Event_Delegation
+# CSS_Grid_Animation_and_JS_Event_Bubbling
 
 This repo uses the combination of following CSS and JS features to demonstrate a concept that can serve as a simple, but exciting page layout model/proto:
 
